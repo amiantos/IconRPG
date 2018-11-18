@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class BattleViewController: UIViewController {
+class BattleViewController: UIViewController, AVAudioPlayerDelegate {
 
     @IBAction func buttonTouchDown(_ sender: UIButton) {
         buttonPress(button: sender)
@@ -19,6 +20,9 @@ class BattleViewController: UIViewController {
     @IBAction func buttonTouchUpInside(_ sender: UIButton) {
         buttonUp(button: sender)
         print(sender.restorationIdentifier!)
+        if sender.restorationIdentifier == "weapon" {
+            self.attack()
+        }
     }
     @IBAction func buttonTouchUp(_ sender: UIButton) {
         buttonUp(button: sender)
@@ -52,6 +56,13 @@ class BattleViewController: UIViewController {
         setupButton(button: self.magicButton)
         setupButton(button: self.inventoryButton)
         self.startWiggling()
+    }
+    
+    func attack() {
+        let swingSounds = ["swing", "swing2", "swing3"]
+        let enemySounds = ["ogre1", "ogre2", "ogre3", "ogre4", "ogre5", "giant1", "giant2", "giant3", "giant4", "giant5"]
+        let sounds = [swingSounds.randomElement()!, enemySounds.randomElement()!]
+        GSAudio.sharedInstance.playSounds(soundFileNames: sounds, withDelay: 0.1)
     }
     
     func setupButton(button: UIButton) {

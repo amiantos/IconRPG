@@ -15,6 +15,20 @@
 		B4E3445421A0DD2600A163FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E3445221A0DD2600A163FB /* LaunchScreen.storyboard */; };
 		B4E3446121A0E29300A163FB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3446021A0E29300A163FB /* Player.swift */; };
 		B4E3446521A0EEA000A163FB /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3446421A0EEA000A163FB /* Enemy.swift */; };
+		B4E3446C21A1D4B700A163FB /* swing2.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3446921A1D4B600A163FB /* swing2.wav */; };
+		B4E3446D21A1D4B700A163FB /* swing.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3446A21A1D4B600A163FB /* swing.wav */; };
+		B4E3446E21A1D4B700A163FB /* swing3.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3446B21A1D4B700A163FB /* swing3.wav */; };
+		B4E3447621A1D76700A163FB /* ogre2.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3447121A1D76500A163FB /* ogre2.wav */; };
+		B4E3447721A1D76700A163FB /* ogre4.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3447221A1D76500A163FB /* ogre4.wav */; };
+		B4E3447821A1D76700A163FB /* ogre3.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3447321A1D76600A163FB /* ogre3.wav */; };
+		B4E3447921A1D76700A163FB /* ogre1.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3447421A1D76700A163FB /* ogre1.wav */; };
+		B4E3447A21A1D76700A163FB /* ogre5.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3447521A1D76700A163FB /* ogre5.wav */; };
+		B4E3447C21A1D84500A163FB /* GSAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3447B21A1D84500A163FB /* GSAudio.swift */; };
+		B4E3448321A1DAB500A163FB /* giant3.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3447E21A1DAB300A163FB /* giant3.wav */; };
+		B4E3448421A1DAB500A163FB /* giant5.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3447F21A1DAB300A163FB /* giant5.wav */; };
+		B4E3448521A1DAB500A163FB /* giant2.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3448021A1DAB400A163FB /* giant2.wav */; };
+		B4E3448621A1DAB500A163FB /* giant4.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3448121A1DAB500A163FB /* giant4.wav */; };
+		B4E3448721A1DAB500A163FB /* giant1.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3448221A1DAB500A163FB /* giant1.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +44,20 @@
 		B4E3446021A0E29300A163FB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B4E3446421A0EEA000A163FB /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		B4E3446621A13A4800A163FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B4E3446921A1D4B600A163FB /* swing2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swing2.wav; sourceTree = "<group>"; };
+		B4E3446A21A1D4B600A163FB /* swing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swing.wav; sourceTree = "<group>"; };
+		B4E3446B21A1D4B700A163FB /* swing3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swing3.wav; sourceTree = "<group>"; };
+		B4E3447121A1D76500A163FB /* ogre2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ogre2.wav; sourceTree = "<group>"; };
+		B4E3447221A1D76500A163FB /* ogre4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ogre4.wav; sourceTree = "<group>"; };
+		B4E3447321A1D76600A163FB /* ogre3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ogre3.wav; sourceTree = "<group>"; };
+		B4E3447421A1D76700A163FB /* ogre1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ogre1.wav; sourceTree = "<group>"; };
+		B4E3447521A1D76700A163FB /* ogre5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ogre5.wav; sourceTree = "<group>"; };
+		B4E3447B21A1D84500A163FB /* GSAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSAudio.swift; sourceTree = "<group>"; };
+		B4E3447E21A1DAB300A163FB /* giant3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = giant3.wav; sourceTree = "<group>"; };
+		B4E3447F21A1DAB300A163FB /* giant5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = giant5.wav; sourceTree = "<group>"; };
+		B4E3448021A1DAB400A163FB /* giant2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = giant2.wav; sourceTree = "<group>"; };
+		B4E3448121A1DAB500A163FB /* giant4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = giant4.wav; sourceTree = "<group>"; };
+		B4E3448221A1DAB500A163FB /* giant1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = giant1.wav; sourceTree = "<group>"; };
 		C907986CE6847B2A5CADF7D0 /* Pods_IconRPG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IconRPG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,11 +112,13 @@
 		B4E3444821A0DD2400A163FB /* IconRPG */ = {
 			isa = PBXGroup;
 			children = (
+				B4E3446821A1D4A800A163FB /* Sounds */,
 				B4E3444921A0DD2400A163FB /* AppDelegate.swift */,
 				B4E3446721A13BF100A163FB /* Views */,
 				B4E3445F21A0E27F00A163FB /* Models */,
 				B4E3445021A0DD2600A163FB /* Assets.xcassets */,
 				B4E3445521A0DD2600A163FB /* Info.plist */,
+				B4E3447B21A1D84500A163FB /* GSAudio.swift */,
 			);
 			path = IconRPG;
 			sourceTree = "<group>";
@@ -112,6 +142,50 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B4E3446821A1D4A800A163FB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3447D21A1DAA300A163FB /* Giant */,
+				B4E3447021A1D74B00A163FB /* Ogre */,
+				B4E3446F21A1D6EC00A163FB /* Attack */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		B4E3446F21A1D6EC00A163FB /* Attack */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3446A21A1D4B600A163FB /* swing.wav */,
+				B4E3446921A1D4B600A163FB /* swing2.wav */,
+				B4E3446B21A1D4B700A163FB /* swing3.wav */,
+			);
+			path = Attack;
+			sourceTree = "<group>";
+		};
+		B4E3447021A1D74B00A163FB /* Ogre */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3447421A1D76700A163FB /* ogre1.wav */,
+				B4E3447121A1D76500A163FB /* ogre2.wav */,
+				B4E3447321A1D76600A163FB /* ogre3.wav */,
+				B4E3447221A1D76500A163FB /* ogre4.wav */,
+				B4E3447521A1D76700A163FB /* ogre5.wav */,
+			);
+			path = Ogre;
+			sourceTree = "<group>";
+		};
+		B4E3447D21A1DAA300A163FB /* Giant */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3448221A1DAB500A163FB /* giant1.wav */,
+				B4E3448021A1DAB400A163FB /* giant2.wav */,
+				B4E3447E21A1DAB300A163FB /* giant3.wav */,
+				B4E3448121A1DAB500A163FB /* giant4.wav */,
+				B4E3447F21A1DAB300A163FB /* giant5.wav */,
+			);
+			path = Giant;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,7 +197,6 @@
 				B4E3444221A0DD2400A163FB /* Sources */,
 				B4E3444321A0DD2400A163FB /* Frameworks */,
 				B4E3444421A0DD2400A163FB /* Resources */,
-				FD549D9FABAA248A6A475837 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,9 +245,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E3448321A1DAB500A163FB /* giant3.wav in Resources */,
+				B4E3446C21A1D4B700A163FB /* swing2.wav in Resources */,
+				B4E3448621A1DAB500A163FB /* giant4.wav in Resources */,
+				B4E3446E21A1D4B700A163FB /* swing3.wav in Resources */,
+				B4E3448521A1DAB500A163FB /* giant2.wav in Resources */,
 				B4E3445421A0DD2600A163FB /* LaunchScreen.storyboard in Resources */,
+				B4E3448421A1DAB500A163FB /* giant5.wav in Resources */,
 				B4E3445121A0DD2600A163FB /* Assets.xcassets in Resources */,
 				B4E3444F21A0DD2400A163FB /* Main.storyboard in Resources */,
+				B4E3447921A1D76700A163FB /* ogre1.wav in Resources */,
+				B4E3448721A1DAB500A163FB /* giant1.wav in Resources */,
+				B4E3447621A1D76700A163FB /* ogre2.wav in Resources */,
+				B4E3447721A1D76700A163FB /* ogre4.wav in Resources */,
+				B4E3447821A1D76700A163FB /* ogre3.wav in Resources */,
+				B4E3447A21A1D76700A163FB /* ogre5.wav in Resources */,
+				B4E3446D21A1D4B700A163FB /* swing.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,30 +289,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD549D9FABAA248A6A475837 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-IconRPG/Pods-IconRPG-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IconRPG/Pods-IconRPG-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -236,6 +298,7 @@
 			files = (
 				B4E3446521A0EEA000A163FB /* Enemy.swift in Sources */,
 				B4E3444C21A0DD2400A163FB /* BattleViewController.swift in Sources */,
+				B4E3447C21A1D84500A163FB /* GSAudio.swift in Sources */,
 				B4E3446121A0E29300A163FB /* Player.swift in Sources */,
 				B4E3444A21A0DD2400A163FB /* AppDelegate.swift in Sources */,
 			);

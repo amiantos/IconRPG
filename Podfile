@@ -6,6 +6,5 @@ target 'IconRPG' do
   use_frameworks!
 
   # Pods for IconRPG
-  pod 'RealmSwift'
 
 end
