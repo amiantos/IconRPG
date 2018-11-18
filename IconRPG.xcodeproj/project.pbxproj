@@ -13,7 +13,6 @@
 		B4E3444F21A0DD2400A163FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E3444D21A0DD2400A163FB /* Main.storyboard */; };
 		B4E3445121A0DD2600A163FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E3445021A0DD2600A163FB /* Assets.xcassets */; };
 		B4E3445421A0DD2600A163FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E3445221A0DD2600A163FB /* LaunchScreen.storyboard */; };
-		B4E3445E21A0DE2100A163FB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B4E3445D21A0DE2100A163FB /* Podfile */; };
 		B4E3446121A0E29300A163FB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3446021A0E29300A163FB /* Player.swift */; };
 		B4E3446521A0EEA000A163FB /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3446421A0EEA000A163FB /* Enemy.swift */; };
 /* End PBXBuildFile section */
@@ -28,7 +27,6 @@
 		B4E3445021A0DD2600A163FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E3445321A0DD2600A163FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4E3445521A0DD2600A163FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4E3445D21A0DE2100A163FB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B4E3446021A0E29300A163FB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B4E3446421A0EEA000A163FB /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		B4E3446621A13A4800A163FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 				B4E3446621A13A4800A163FB /* README.md */,
 				B4E3444821A0DD2400A163FB /* IconRPG */,
 				B4E3444721A0DD2400A163FB /* Products */,
-				B4E3445D21A0DE2100A163FB /* Podfile */,
 				5C7871CE70BCB8634E04FB87 /* Pods */,
 				6B9170D316C29E75617E07F2 /* Frameworks */,
 			);
@@ -87,12 +84,10 @@
 		B4E3444821A0DD2400A163FB /* IconRPG */ = {
 			isa = PBXGroup;
 			children = (
-				B4E3445F21A0E27F00A163FB /* Models */,
 				B4E3444921A0DD2400A163FB /* AppDelegate.swift */,
-				B4E3444B21A0DD2400A163FB /* BattleViewController.swift */,
-				B4E3444D21A0DD2400A163FB /* Main.storyboard */,
+				B4E3446721A13BF100A163FB /* Views */,
+				B4E3445F21A0E27F00A163FB /* Models */,
 				B4E3445021A0DD2600A163FB /* Assets.xcassets */,
-				B4E3445221A0DD2600A163FB /* LaunchScreen.storyboard */,
 				B4E3445521A0DD2600A163FB /* Info.plist */,
 			);
 			path = IconRPG;
@@ -105,6 +100,16 @@
 				B4E3446421A0EEA000A163FB /* Enemy.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B4E3446721A13BF100A163FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3445221A0DD2600A163FB /* LaunchScreen.storyboard */,
+				B4E3444D21A0DD2400A163FB /* Main.storyboard */,
+				B4E3444B21A0DD2400A163FB /* BattleViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +174,6 @@
 			files = (
 				B4E3445421A0DD2600A163FB /* LaunchScreen.storyboard in Resources */,
 				B4E3445121A0DD2600A163FB /* Assets.xcassets in Resources */,
-				B4E3445E21A0DE2100A163FB /* Podfile in Resources */,
 				B4E3444F21A0DD2400A163FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
