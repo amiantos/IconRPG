@@ -1,5 +1,5 @@
 //
-//  Player.swift
+//  Enemy.swift
 //  IconRPG
 //
 //  Created by Bradley Root on 11/17/18.
@@ -7,11 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
-class Player {
+class Enemy {
     @objc dynamic var name = ""
     @objc dynamic var health = 100
     @objc dynamic var strength = 10
     @objc dynamic var intelligence = 10
     @objc dynamic var dexterity = 10
+    @objc dynamic var appearance: UIImage
+    
+    init() {
+        let images = ["enemy_furry_demon", "enemy_ghost", "enemy_demon"]
+        self.appearance = UIImage(named: images.randomElement() ?? "enemy_furry_demon")!
+    }
 }

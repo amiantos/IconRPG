@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		1A1C323A85A43A6D37AA6A06 /* Pods_IconRPG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C907986CE6847B2A5CADF7D0 /* Pods_IconRPG.framework */; };
 		B4E3444A21A0DD2400A163FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3444921A0DD2400A163FB /* AppDelegate.swift */; };
-		B4E3444C21A0DD2400A163FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3444B21A0DD2400A163FB /* ViewController.swift */; };
+		B4E3444C21A0DD2400A163FB /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3444B21A0DD2400A163FB /* BattleViewController.swift */; };
 		B4E3444F21A0DD2400A163FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E3444D21A0DD2400A163FB /* Main.storyboard */; };
 		B4E3445121A0DD2600A163FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E3445021A0DD2600A163FB /* Assets.xcassets */; };
 		B4E3445421A0DD2600A163FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E3445221A0DD2600A163FB /* LaunchScreen.storyboard */; };
 		B4E3445E21A0DE2100A163FB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B4E3445D21A0DE2100A163FB /* Podfile */; };
 		B4E3446121A0E29300A163FB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3446021A0E29300A163FB /* Player.swift */; };
-		B4E3446321A0E33900A163FB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B4E3446221A0E33900A163FB /* .gitignore */; };
+		B4E3446521A0EEA000A163FB /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3446421A0EEA000A163FB /* Enemy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +23,15 @@
 		674CFE73B66B50ED4FB0F403 /* Pods-IconRPG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IconRPG.release.xcconfig"; path = "Pods/Target Support Files/Pods-IconRPG/Pods-IconRPG.release.xcconfig"; sourceTree = "<group>"; };
 		B4E3444621A0DD2400A163FB /* IconRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E3444921A0DD2400A163FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4E3444B21A0DD2400A163FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4E3444B21A0DD2400A163FB /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 		B4E3444E21A0DD2400A163FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4E3445021A0DD2600A163FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E3445321A0DD2600A163FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4E3445521A0DD2600A163FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4E3445D21A0DE2100A163FB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B4E3446021A0E29300A163FB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		B4E3446221A0E33900A163FB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B4E3446421A0EEA000A163FB /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		B4E3446621A13A4800A163FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C907986CE6847B2A5CADF7D0 /* Pods_IconRPG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IconRPG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,7 +67,7 @@
 		B4E3443D21A0DD2400A163FB = {
 			isa = PBXGroup;
 			children = (
-				B4E3446221A0E33900A163FB /* .gitignore */,
+				B4E3446621A13A4800A163FB /* README.md */,
 				B4E3444821A0DD2400A163FB /* IconRPG */,
 				B4E3444721A0DD2400A163FB /* Products */,
 				B4E3445D21A0DE2100A163FB /* Podfile */,
@@ -88,7 +89,7 @@
 			children = (
 				B4E3445F21A0E27F00A163FB /* Models */,
 				B4E3444921A0DD2400A163FB /* AppDelegate.swift */,
-				B4E3444B21A0DD2400A163FB /* ViewController.swift */,
+				B4E3444B21A0DD2400A163FB /* BattleViewController.swift */,
 				B4E3444D21A0DD2400A163FB /* Main.storyboard */,
 				B4E3445021A0DD2600A163FB /* Assets.xcassets */,
 				B4E3445221A0DD2600A163FB /* LaunchScreen.storyboard */,
@@ -101,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E3446021A0E29300A163FB /* Player.swift */,
+				B4E3446421A0EEA000A163FB /* Enemy.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,7 +167,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4E3446321A0E33900A163FB /* .gitignore in Resources */,
 				B4E3445421A0DD2600A163FB /* LaunchScreen.storyboard in Resources */,
 				B4E3445121A0DD2600A163FB /* Assets.xcassets in Resources */,
 				B4E3445E21A0DE2100A163FB /* Podfile in Resources */,
@@ -229,7 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4E3444C21A0DD2400A163FB /* ViewController.swift in Sources */,
+				B4E3446521A0EEA000A163FB /* Enemy.swift in Sources */,
+				B4E3444C21A0DD2400A163FB /* BattleViewController.swift in Sources */,
 				B4E3446121A0E29300A163FB /* Player.swift in Sources */,
 				B4E3444A21A0DD2400A163FB /* AppDelegate.swift in Sources */,
 			);
@@ -381,7 +383,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Y9M69QJKZ;
 				INFOPLIST_FILE = IconRPG/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,7 +403,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Y9M69QJKZ;
 				INFOPLIST_FILE = IconRPG/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
