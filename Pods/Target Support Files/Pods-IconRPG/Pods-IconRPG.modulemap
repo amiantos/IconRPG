@@ -1,0 +1,6 @@
+framework module Pods_IconRPG {
+  umbrella header "Pods-IconRPG-umbrella.h"
+
+  export *
+  module * { export * }
+}
