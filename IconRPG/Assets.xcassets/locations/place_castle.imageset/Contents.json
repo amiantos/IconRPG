@@ -1,0 +1,28 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "noun_Castle_867046_000000.pdf"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "noun_Castle_867046_000000.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

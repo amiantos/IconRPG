@@ -29,6 +29,8 @@
 		B4E3448521A1DAB500A163FB /* giant2.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3448021A1DAB400A163FB /* giant2.wav */; };
 		B4E3448621A1DAB500A163FB /* giant4.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3448121A1DAB500A163FB /* giant4.wav */; };
 		B4E3448721A1DAB500A163FB /* giant1.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4E3448221A1DAB500A163FB /* giant1.wav */; };
+		B4E3448921A24BB800A163FB /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3448821A24BB800A163FB /* PlaceViewController.swift */; };
+		B4E3448B21A24C0600A163FB /* EnemyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3448A21A24C0600A163FB /* EnemyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		B4E3448021A1DAB400A163FB /* giant2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = giant2.wav; sourceTree = "<group>"; };
 		B4E3448121A1DAB500A163FB /* giant4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = giant4.wav; sourceTree = "<group>"; };
 		B4E3448221A1DAB500A163FB /* giant1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = giant1.wav; sourceTree = "<group>"; };
+		B4E3448821A24BB800A163FB /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		B4E3448A21A24C0600A163FB /* EnemyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyCollectionViewCell.swift; sourceTree = "<group>"; };
 		C907986CE6847B2A5CADF7D0 /* Pods_IconRPG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IconRPG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,6 +142,8 @@
 				B4E3445221A0DD2600A163FB /* LaunchScreen.storyboard */,
 				B4E3444D21A0DD2400A163FB /* Main.storyboard */,
 				B4E3444B21A0DD2400A163FB /* BattleViewController.swift */,
+				B4E3448821A24BB800A163FB /* PlaceViewController.swift */,
+				B4E3448A21A24C0600A163FB /* EnemyCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,10 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E3448921A24BB800A163FB /* PlaceViewController.swift in Sources */,
 				B4E3446521A0EEA000A163FB /* Enemy.swift in Sources */,
 				B4E3444C21A0DD2400A163FB /* BattleViewController.swift in Sources */,
 				B4E3447C21A1D84500A163FB /* GSAudio.swift in Sources */,
 				B4E3446121A0E29300A163FB /* Player.swift in Sources */,
+				B4E3448B21A24C0600A163FB /* EnemyCollectionViewCell.swift in Sources */,
 				B4E3444A21A0DD2400A163FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

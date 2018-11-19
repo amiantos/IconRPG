@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 
 class BattleViewController: UIViewController, AVAudioPlayerDelegate {
+    
+    var enemy: Enemy = Enemy()
 
     @IBAction func buttonTouchDown(_ sender: UIButton) {
         buttonPress(button: sender)
@@ -34,8 +36,13 @@ class BattleViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var magicButton: UIButton!
     @IBOutlet weak var inventoryButton: UIButton!
 
-    
     @IBOutlet weak var enemyImageView: UIImageView!
+    @IBOutlet weak var enemyHealthBar: UIView!
+    @IBOutlet weak var enemyHealthBarInterior: UIView!
+    
+    @IBOutlet weak var playerHealthBar: UIView!
+    @IBOutlet weak var playerHealthBarInterior: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,19 +50,30 @@ class BattleViewController: UIViewController, AVAudioPlayerDelegate {
         self.setupView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.startWiggling()
+    }
+    
     func setupView() {
-        let enemy = Enemy()
-        self.enemyImageView.image = enemy.appearance
+        self.enemyImageView.image = self.enemy.appearance
+        self.startWiggling()
     }
     
     override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
         setupButton(button: self.weaponButton)
         setupButton(button: self.bandageButton)
         setupButton(button: self.guardButton)
         setupButton(button: self.magicButton)
         setupButton(button: self.inventoryButton)
-        self.startWiggling()
+
+        enemyHealthBarInterior.frame = CGRect(x: 0, y: 0, width: enemyHealthBar.frame.width, height: enemyHealthBar.frame.height)
+        enemyHealthBarInterior.layer.cornerRadius = enemyHealthBarInterior.frame.height / 2
+        enemyHealthBarInterior.clipsToBounds = true
+        
+        playerHealthBarInterior.frame = CGRect(x: 0, y: 0, width: playerHealthBar.frame.width, height: playerHealthBar.frame.height)
+        playerHealthBarInterior.layer.cornerRadius = enemyHealthBarInterior.frame.height / 2
+        playerHealthBarInterior.clipsToBounds = true
     }
     
     func attack() {
@@ -63,6 +81,18 @@ class BattleViewController: UIViewController, AVAudioPlayerDelegate {
         let enemySounds = ["ogre1", "ogre2", "ogre3", "ogre4", "ogre5", "giant1", "giant2", "giant3", "giant4", "giant5"]
         let sounds = [swingSounds.randomElement()!, enemySounds.randomElement()!]
         GSAudio.sharedInstance.playSounds(soundFileNames: sounds, withDelay: 0.1)
+        
+        
+        var new_width = enemyHealthBarInterior.frame.size.width - 10
+        new_width = (new_width >= 0) ? new_width : 0
+        
+        if new_width == 0 {
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        UIView.animate(withDuration: 0.2, animations: {
+            self.enemyHealthBarInterior.frame = CGRect(x: ((self.enemyHealthBar.frame.width - new_width) / 2), y: 0, width: new_width, height: self.enemyHealthBarInterior.frame.height)
+        })
     }
     
     func setupButton(button: UIButton) {
