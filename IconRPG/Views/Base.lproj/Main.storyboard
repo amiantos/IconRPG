@@ -245,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136" y="138"/>
+            <point key="canvasLocation" x="967" y="138"/>
         </scene>
         <!--IconRPG-->
         <scene sceneID="Ive-dz-S23">
@@ -262,16 +262,16 @@
                                 <rect key="frame" x="0.0" y="453" width="414" height="409"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dA3-15-Nrs">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="136.5"/>
+                                        <rect key="frame" x="20" y="0.0" width="374" height="136.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CWn-wj-nzP">
-                                            <size key="itemSize" width="146" height="134"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="CWn-wj-nzP">
+                                            <size key="itemSize" width="134" height="134"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="enemyButton" id="YXh-Cg-R0s" customClass="EnemyCollectionViewCell" customModule="IconRPG" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="enemyButton" id="YXh-Cg-R0s" customClass="EnemyCollectionViewCell" customModule="IconRPG" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="1.5" width="146" height="134"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -305,9 +305,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="dA3-15-Nrs" firstAttribute="top" secondItem="0yx-fQ-P6g" secondAttribute="top" id="5XW-pL-IYG"/>
-                                    <constraint firstAttribute="trailing" secondItem="dA3-15-Nrs" secondAttribute="trailing" id="9sP-uX-qxF"/>
+                                    <constraint firstAttribute="trailing" secondItem="dA3-15-Nrs" secondAttribute="trailing" constant="20" id="9sP-uX-qxF"/>
                                     <constraint firstItem="dA3-15-Nrs" firstAttribute="height" secondItem="0yx-fQ-P6g" secondAttribute="height" multiplier="1/3" id="ZRC-5z-G5H"/>
-                                    <constraint firstItem="dA3-15-Nrs" firstAttribute="leading" secondItem="0yx-fQ-P6g" secondAttribute="leading" id="a4D-rE-QT1"/>
+                                    <constraint firstItem="dA3-15-Nrs" firstAttribute="leading" secondItem="0yx-fQ-P6g" secondAttribute="leading" constant="20" id="a4D-rE-QT1"/>
                                 </constraints>
                             </view>
                         </subviews>

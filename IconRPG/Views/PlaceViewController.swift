@@ -33,8 +33,7 @@ class PlaceViewController: UIViewController, UICollectionViewDataSource, UIColle
         for _ in 1 ... random {
             enemies.append(Enemy())
         }
-        
-        
+
         enemyCollectionView.delegate = self
         enemyCollectionView.dataSource = self
 
@@ -57,18 +56,22 @@ class PlaceViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.frame.width / 3) - 16
-        print(width)
-        return CGSize(width: width, height: width)
+        let width = (collectionView.frame.width / 3)
+        let height = collectionView.frame.height
+        let size = height < width ? height : width
+        print(size)
+        return CGSize(width: size, height: size)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        let cellWidth: CGFloat = (collectionView.frame.width / 3) - 16
+        let width = (collectionView.frame.width / 3)
+        let height = collectionView.frame.height
+        let cellWidth: CGFloat = height < width ? height : width
         
         let numberOfCells: CGFloat = CGFloat(collectionView.numberOfItems(inSection: 0))
-        let divisor = numberOfCells == 2 ? 2 : (numberOfCells + 1)
-        let edgeInsets = ((self.view.frame.size.width - (numberOfCells * cellWidth)) / divisor)
+
+        let edgeInsets = ((collectionView.frame.size.width - (numberOfCells * cellWidth)) / (numberOfCells == 2 ? 2 : numberOfCells + 1))
         
         print("Edge Insets: \(edgeInsets)")
         
