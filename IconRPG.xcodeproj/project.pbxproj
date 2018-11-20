@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A1C323A85A43A6D37AA6A06 /* Pods_IconRPG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C907986CE6847B2A5CADF7D0 /* Pods_IconRPG.framework */; };
+		446D899221A39805005EA1DD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446D899121A39805005EA1DD /* Place.swift */; };
 		B4E3444A21A0DD2400A163FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3444921A0DD2400A163FB /* AppDelegate.swift */; };
 		B4E3444C21A0DD2400A163FB /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3444B21A0DD2400A163FB /* BattleViewController.swift */; };
 		B4E3444F21A0DD2400A163FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E3444D21A0DD2400A163FB /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		2D40B0448D3E3C6509839B6C /* Pods-IconRPG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IconRPG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IconRPG/Pods-IconRPG.debug.xcconfig"; sourceTree = "<group>"; };
+		446D899121A39805005EA1DD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		674CFE73B66B50ED4FB0F403 /* Pods-IconRPG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IconRPG.release.xcconfig"; path = "Pods/Target Support Files/Pods-IconRPG/Pods-IconRPG.release.xcconfig"; sourceTree = "<group>"; };
 		B4E3444621A0DD2400A163FB /* IconRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E3444921A0DD2400A163FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +47,6 @@
 		B4E3445521A0DD2600A163FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4E3446021A0E29300A163FB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B4E3446421A0EEA000A163FB /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
-		B4E3446621A13A4800A163FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B4E3446921A1D4B600A163FB /* swing2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swing2.wav; sourceTree = "<group>"; };
 		B4E3446A21A1D4B600A163FB /* swing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swing.wav; sourceTree = "<group>"; };
 		B4E3446B21A1D4B700A163FB /* swing3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swing3.wav; sourceTree = "<group>"; };
@@ -97,7 +98,6 @@
 		B4E3443D21A0DD2400A163FB = {
 			isa = PBXGroup;
 			children = (
-				B4E3446621A13A4800A163FB /* README.md */,
 				B4E3444821A0DD2400A163FB /* IconRPG */,
 				B4E3444721A0DD2400A163FB /* Products */,
 				5C7871CE70BCB8634E04FB87 /* Pods */,
@@ -132,6 +132,7 @@
 			children = (
 				B4E3446021A0E29300A163FB /* Player.swift */,
 				B4E3446421A0EEA000A163FB /* Enemy.swift */,
+				446D899121A39805005EA1DD /* Place.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +306,7 @@
 				B4E3448921A24BB800A163FB /* PlaceViewController.swift in Sources */,
 				B4E3446521A0EEA000A163FB /* Enemy.swift in Sources */,
 				B4E3444C21A0DD2400A163FB /* BattleViewController.swift in Sources */,
+				446D899221A39805005EA1DD /* Place.swift in Sources */,
 				B4E3447C21A1D84500A163FB /* GSAudio.swift in Sources */,
 				B4E3446121A0E29300A163FB /* Player.swift in Sources */,
 				B4E3448B21A24C0600A163FB /* EnemyCollectionViewCell.swift in Sources */,

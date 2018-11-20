@@ -5,9 +5,6 @@
       location = "group:IconRPG.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:.gitignore">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

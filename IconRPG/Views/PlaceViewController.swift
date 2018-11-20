@@ -8,74 +8,32 @@
 
 import UIKit
 
-class PlaceViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, EnemyCollectionViewCellDelegate {
-    
-    func buttonPressed(cell: EnemyCollectionViewCell) {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let battleView = storyBoard.instantiateViewController(withIdentifier: "battleView") as! BattleViewController
-        battleView.enemy = cell.enemy
-        self.present(battleView, animated: true, completion: nil)
-        
-    }
-    
+class PlaceViewController: UIViewController {
+
     @IBOutlet weak var placeImageView: UIImageView!
     @IBOutlet weak var enemyCollectionView: UICollectionView!
     
     var enemies: [Enemy] = []
     
+    var place: Place = Place()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let random = Int.random(in: 1 ... 3)
-        print(random)
+        self.placeImageView.image = place.appearance
+        self.enemies = place.enemies
         
-        for _ in 1 ... random {
-            enemies.append(Enemy())
-        }
-
         enemyCollectionView.delegate = self
         enemyCollectionView.dataSource = self
 
-        // Do any additional setup after loading the view.
     }
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return enemies.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "enemyButton", for: indexPath) as! EnemyCollectionViewCell
-        cell.delegate = self
-        cell.enemy = enemies[indexPath.row]
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.frame.width / 3)
-        let height = collectionView.frame.height
-        let size = height < width ? height : width
-        print(size)
-        return CGSize(width: size, height: size)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        let width = (collectionView.frame.width / 3)
-        let height = collectionView.frame.height
-        let cellWidth: CGFloat = height < width ? height : width
-        
-        let numberOfCells: CGFloat = CGFloat(collectionView.numberOfItems(inSection: 0))
-
-        let edgeInsets = ((collectionView.frame.size.width - (numberOfCells * cellWidth)) / (numberOfCells == 2 ? 2 : numberOfCells + 1))
-        
-        print("Edge Insets: \(edgeInsets)")
-        
-        return UIEdgeInsets(top: 0, left: edgeInsets, bottom: 0, right: edgeInsets)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        for enemy in enemies {
+            print(enemy.alive)
+        }
+        enemyCollectionView.reloadData()
     }
     
 
@@ -88,5 +46,65 @@ class PlaceViewController: UIViewController, UICollectionViewDataSource, UIColle
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+
+extension PlaceViewController: EnemyCollectionViewCellDelegate {
+    
+    func buttonPressed(cell: EnemyCollectionViewCell) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let battleView = storyBoard.instantiateViewController(withIdentifier: "battleView") as! BattleViewController
+        battleView.enemy = cell.enemy
+        self.present(battleView, animated: true, completion: nil)
+        
+    }
+    
+}
+
+extension PlaceViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView.restorationIdentifier == "enemyCells" {
+            return enemies.count
+        }
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView.restorationIdentifier == "enemyCells" {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "enemyButton", for: indexPath) as! EnemyCollectionViewCell
+            cell.delegate = self
+            cell.enemy = enemies[indexPath.row]
+            cell.updateLifeStatus()
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView.restorationIdentifier == "enemyCells" {
+            let width = (collectionView.frame.width / 3)
+            let height = collectionView.frame.height
+            let size = height < width ? height : width
+            return CGSize(width: size, height: size)
+        }
+        return CGSize(width: 1, height: 1 )
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if collectionView.restorationIdentifier == "enemyCells" {
+            let width = (collectionView.frame.width / 3)
+            let height = collectionView.frame.height
+            let cellWidth: CGFloat = height < width ? height : width
+            let numberOfCells: CGFloat = CGFloat(collectionView.numberOfItems(inSection: 0))
+            let edgeInsets = ((collectionView.frame.size.width - (numberOfCells * cellWidth)) / (numberOfCells == 2 ? 2 : numberOfCells + 1))
+            return UIEdgeInsets(top: 0, left: edgeInsets, bottom: 0, right: edgeInsets)
+        }
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
 
 }

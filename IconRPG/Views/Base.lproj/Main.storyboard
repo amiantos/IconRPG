@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wtm-nr-gup">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wtm-nr-gup">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -261,7 +261,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yx-fQ-P6g">
                                 <rect key="frame" x="0.0" y="453" width="414" height="409"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dA3-15-Nrs">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="enemyCells" scrollEnabled="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dA3-15-Nrs">
                                         <rect key="frame" x="20" y="0.0" width="374" height="136.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="CWn-wj-nzP">
@@ -282,20 +282,30 @@
                                                             <rect key="frame" x="8" y="52" width="130" height="74"/>
                                                             <state key="normal" image="enemy_furry_demon"/>
                                                             <connections>
+                                                                <action selector="enemyButtonTouchDown:" destination="YXh-Cg-R0s" eventType="touchDown" id="IDq-k5-O2I"/>
+                                                                <action selector="enemyButtonTouchUp:" destination="YXh-Cg-R0s" eventType="touchUpOutside" id="Nma-VN-Olz"/>
                                                                 <action selector="enemyButtonTouchUpInside:" destination="YXh-Cg-R0s" eventType="touchUpInside" id="9uZ-pV-fkS"/>
                                                             </connections>
                                                         </button>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="death_marker" translatesAutoresizingMaskIntoConstraints="NO" id="LER-68-2uW">
+                                                            <rect key="frame" x="8" y="8" width="130" height="118"/>
+                                                        </imageView>
                                                     </subviews>
                                                 </view>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="O6H-tU-SHE" firstAttribute="leading" secondItem="YXh-Cg-R0s" secondAttribute="leadingMargin" id="0zo-1b-AiC"/>
                                                     <constraint firstAttribute="trailingMargin" secondItem="O6H-tU-SHE" secondAttribute="trailing" id="EGK-qo-WXt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LER-68-2uW" secondAttribute="trailing" constant="8" id="Eh2-kx-fS2"/>
                                                     <constraint firstItem="O6H-tU-SHE" firstAttribute="top" secondItem="YXh-Cg-R0s" secondAttribute="topMargin" id="JQl-Fp-80C"/>
+                                                    <constraint firstItem="LER-68-2uW" firstAttribute="leading" secondItem="YXh-Cg-R0s" secondAttribute="leading" constant="8" id="Kj8-8F-EQJ"/>
+                                                    <constraint firstItem="LER-68-2uW" firstAttribute="top" secondItem="YXh-Cg-R0s" secondAttribute="top" constant="8" id="hNE-k6-TKd"/>
                                                     <constraint firstAttribute="bottomMargin" secondItem="O6H-tU-SHE" secondAttribute="bottom" id="qJb-Oj-MHg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="LER-68-2uW" secondAttribute="bottom" constant="8" id="vMu-hE-w7B"/>
                                                 </constraints>
                                                 <size key="customSize" width="146" height="134"/>
                                                 <connections>
+                                                    <outlet property="deathMarker" destination="LER-68-2uW" id="gYB-V9-cAT"/>
                                                     <outlet property="enemyButton" destination="O6H-tU-SHE" id="Xdj-2w-xYq"/>
                                                 </connections>
                                             </collectionViewCell>
@@ -337,6 +347,7 @@
     </scenes>
     <resources>
         <image name="bandage" width="100" height="100"/>
+        <image name="death_marker" width="222" height="222"/>
         <image name="enemy_furry_demon" width="66" height="66"/>
         <image name="inventory" width="100" height="100"/>
         <image name="magic_book" width="64" height="64"/>

@@ -9,9 +9,9 @@
 import Foundation
 
 class Player {
-    @objc dynamic var name = ""
-    @objc dynamic var health = 100
-    @objc dynamic var strength = 10
-    @objc dynamic var intelligence = 10
-    @objc dynamic var dexterity = 10
+    var name = ""
+    var health = 100
+    var strength = 10
+    var intelligence = 10
+    var dexterity = 10
 }
