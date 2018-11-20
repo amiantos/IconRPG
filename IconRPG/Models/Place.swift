@@ -20,7 +20,7 @@ class Place {
     init() {
         // Add enemies to place
         let random = Int.random(in: 1 ... 3)
-        for _ in 1 ... random {
+        for _ in 1 ... 3 {
             enemies.append(Enemy())
         }
         // Determine appearance

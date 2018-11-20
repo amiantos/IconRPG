@@ -43,36 +43,38 @@ class EnemyCollectionViewCell: UICollectionViewCell {
     func updateLifeStatus() {
         print("Laying out enemy button... \(enemy.alive)")
         if enemy.alive {
-            deathMarker.isHidden = true
+            self.deathMarker.isHidden = true
+            self.enemyButton.isEnabled = true
         } else {
-            deathMarker.frame.size = CGSize(width: self.enemyButton.imageView!.frame.width, height: self.enemyButton.imageView!.frame.height)
-            deathMarker.center = self.enemyButton.center
-            deathMarker.isHidden = false
-            deathMarker.image = deathMarker.image!.withRenderingMode(.alwaysTemplate)
-            deathMarker.tintColor = UIColor.red
-            enemyButton.isEnabled = false
+            self.deathMarker.frame.size = CGSize(width: self.enemyButton.imageView!.frame.width, height: self.enemyButton.imageView!.frame.height)
+            self.deathMarker.center = self.enemyButton.center
+            self.deathMarker.isHidden = false
+            self.deathMarker.image = self.deathMarker.image!.withRenderingMode(.alwaysTemplate)
+            self.deathMarker.tintColor = UIColor.red
+            // self.deathMarker.transform = CGAffineTransform(rotationAngle: CGFloat.random(in: 1 ... 6))
+            self.enemyButton.isEnabled = false
         }
     }
     
     // MARK: - Button Appearance
     
     func setupButton() {
-        enemyButton.setImage(enemy.appearance, for: .normal)
-        enemyButton.backgroundColor = UIColor.white
-        enemyButton.layer.cornerRadius = enemyButton.frame.width / 2
-        enemyButton.clipsToBounds = true
-        enemyButton.layer.shadowPath = UIBezierPath(
-            roundedRect: enemyButton.bounds,
-            cornerRadius: enemyButton.layer.cornerRadius).cgPath
-        enemyButton.layer.shadowColor = UIColor.black.cgColor
-        enemyButton.layer.shadowOffset = CGSize(width: 3, height: 3)
-        enemyButton.layer.shadowRadius = 5
-        enemyButton.layer.shadowOpacity = 0.15
-        enemyButton.layer.masksToBounds = false
+        self.enemyButton.setImage(enemy.appearance, for: .normal)
+        self.enemyButton.backgroundColor = UIColor.white
+        self.enemyButton.layer.cornerRadius = self.enemyButton.frame.width / 2
+        self.enemyButton.clipsToBounds = true
+        self.enemyButton.layer.shadowPath = UIBezierPath(
+            roundedRect: self.enemyButton.bounds,
+            cornerRadius: self.enemyButton.layer.cornerRadius).cgPath
+        self.enemyButton.layer.shadowColor = UIColor.black.cgColor
+        self.enemyButton.layer.shadowOffset = CGSize(width: 3, height: 3)
+        self.enemyButton.layer.shadowRadius = 5
+        self.enemyButton.layer.shadowOpacity = 0.15
+        self.enemyButton.layer.masksToBounds = false
         
-        let edgeInset = enemyButton.frame.width * 0.2
+        let edgeInset = self.enemyButton.frame.width * 0.2
         
-        enemyButton.imageEdgeInsets = UIEdgeInsets(top: edgeInset, left: edgeInset, bottom: edgeInset, right: edgeInset)
+        self.enemyButton.imageEdgeInsets = UIEdgeInsets(top: edgeInset, left: edgeInset, bottom: edgeInset, right: edgeInset)
     }
     
     func buttonPress(button: UIButton) {
