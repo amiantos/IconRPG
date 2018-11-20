@@ -98,7 +98,6 @@ class BattleViewController: UIViewController {
     }
     
     func buttonPress(button: UIButton) {
-        button.layer.removeAllAnimations()
         UIView.animate(withDuration: 0.1, animations: {
             button.transform = CGAffineTransform(translationX: 1, y: 2)
         })
@@ -113,7 +112,6 @@ class BattleViewController: UIViewController {
     }
     
     func buttonUp(button: UIButton) {
-        button.layer.removeAllAnimations()
         UIView.animate(withDuration: 0.1, animations: {
             button.transform = CGAffineTransform(translationX: -1, y: -2)
         })

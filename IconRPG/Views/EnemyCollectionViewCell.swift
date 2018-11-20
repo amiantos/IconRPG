@@ -46,7 +46,7 @@ class EnemyCollectionViewCell: UICollectionViewCell {
             deathMarker.isHidden = true
         } else {
             deathMarker.frame.size = CGSize(width: self.enemyButton.imageView!.frame.width, height: self.enemyButton.imageView!.frame.height)
-            deathMarker.center = self.enemyButton.imageView!.center
+            deathMarker.center = self.enemyButton.center
             deathMarker.isHidden = false
             deathMarker.image = deathMarker.image!.withRenderingMode(.alwaysTemplate)
             deathMarker.tintColor = UIColor.red
