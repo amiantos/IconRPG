@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A1C323A85A43A6D37AA6A06 /* Pods_IconRPG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C907986CE6847B2A5CADF7D0 /* Pods_IconRPG.framework */; };
+		44276A8521A4DC6E000FD95E /* RPGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44276A8421A4DC6E000FD95E /* RPGButton.swift */; };
 		446D899221A39805005EA1DD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446D899121A39805005EA1DD /* Place.swift */; };
 		B4E3444A21A0DD2400A163FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3444921A0DD2400A163FB /* AppDelegate.swift */; };
 		B4E3444C21A0DD2400A163FB /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3444B21A0DD2400A163FB /* BattleViewController.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		2D40B0448D3E3C6509839B6C /* Pods-IconRPG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IconRPG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IconRPG/Pods-IconRPG.debug.xcconfig"; sourceTree = "<group>"; };
+		44276A8421A4DC6E000FD95E /* RPGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGButton.swift; sourceTree = "<group>"; };
 		446D899121A39805005EA1DD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		674CFE73B66B50ED4FB0F403 /* Pods-IconRPG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IconRPG.release.xcconfig"; path = "Pods/Target Support Files/Pods-IconRPG/Pods-IconRPG.release.xcconfig"; sourceTree = "<group>"; };
 		B4E3444621A0DD2400A163FB /* IconRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44276A8621A4DF9B000FD95E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3448A21A24C0600A163FB /* EnemyCollectionViewCell.swift */,
+				44276A8421A4DC6E000FD95E /* RPGButton.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		5C7871CE70BCB8634E04FB87 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +127,7 @@
 		B4E3444821A0DD2400A163FB /* IconRPG */ = {
 			isa = PBXGroup;
 			children = (
+				44276A8621A4DF9B000FD95E /* Objects */,
 				B4E3446821A1D4A800A163FB /* Sounds */,
 				B4E3444921A0DD2400A163FB /* AppDelegate.swift */,
 				B4E3446721A13BF100A163FB /* Views */,
@@ -144,7 +156,6 @@
 				B4E3444D21A0DD2400A163FB /* Main.storyboard */,
 				B4E3444B21A0DD2400A163FB /* BattleViewController.swift */,
 				B4E3448821A24BB800A163FB /* PlaceViewController.swift */,
-				B4E3448A21A24C0600A163FB /* EnemyCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +317,7 @@
 				B4E3448921A24BB800A163FB /* PlaceViewController.swift in Sources */,
 				B4E3446521A0EEA000A163FB /* Enemy.swift in Sources */,
 				B4E3444C21A0DD2400A163FB /* BattleViewController.swift in Sources */,
+				44276A8521A4DC6E000FD95E /* RPGButton.swift in Sources */,
 				446D899221A39805005EA1DD /* Place.swift in Sources */,
 				B4E3447C21A1D84500A163FB /* GSAudio.swift in Sources */,
 				B4E3446121A0E29300A163FB /* Player.swift in Sources */,

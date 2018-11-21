@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wtm-nr-gup">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wtm-nr-gup">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -56,7 +56,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bj9-P0-Gmd" userLabel="Center Buttons">
                                         <rect key="frame" x="57.5" y="40.5" width="299" height="328"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="weapon" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El1-z3-3Fs">
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="weapon" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El1-z3-3Fs" customClass="RPGButton" customModule="IconRPG" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="196.5" height="197"/>
                                                 <color key="backgroundColor" red="0.90000000000000002" green="0.90000000000000002" blue="0.90000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -72,7 +72,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xae-HG-X0q" userLabel="Button Container">
                                                 <rect key="frame" x="204.5" y="0.0" width="94.5" height="197"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="guard" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6po-df-GYf">
+                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="guard" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6po-df-GYf" customClass="RPGButton" customModule="IconRPG" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="94.5" height="94.5"/>
                                                         <color key="backgroundColor" red="0.90000000000000002" green="0.90000000000000002" blue="0.90000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -85,7 +85,7 @@
                                                             <action selector="buttonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBV-T8-Gut"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="magic" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtA-KY-93c">
+                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="magic" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtA-KY-93c" customClass="RPGButton" customModule="IconRPG" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="102.5" width="94.5" height="94.5"/>
                                                         <color key="backgroundColor" red="0.90000000000000002" green="0.90000000000000002" blue="0.90000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -144,7 +144,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkc-H9-ETt" userLabel="Player Buttons">
                                                 <rect key="frame" x="47" y="233.5" width="205" height="94.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="inventory" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSv-zb-i2t">
+                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="inventory" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSv-zb-i2t" customClass="RPGButton" customModule="IconRPG" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="94.5" height="94.5"/>
                                                         <color key="backgroundColor" red="0.90000000000000002" green="0.90000000000000002" blue="0.90000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -157,7 +157,7 @@
                                                             <action selector="buttonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sMa-Fy-FcG"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="bandage" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R97-Z2-XHi">
+                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="bandage" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R97-Z2-XHi" customClass="RPGButton" customModule="IconRPG" customModuleProvider="target">
                                                         <rect key="frame" x="110.5" y="0.0" width="94.5" height="94.5"/>
                                                         <color key="backgroundColor" red="0.90000000000000002" green="0.90000000000000002" blue="0.90000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -278,7 +278,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="146" height="134"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6H-tU-SHE">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6H-tU-SHE" customClass="RPGButton" customModule="IconRPG" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="52" width="130" height="74"/>
                                                             <state key="normal" image="enemy_furry_demon"/>
                                                             <connections>

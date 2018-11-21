@@ -15,11 +15,11 @@ class BattleViewController: UIViewController {
     
     // MARK: - Outlets
 
-    @IBOutlet weak var weaponButton: UIButton!
-    @IBOutlet weak var guardButton: UIButton!
-    @IBOutlet weak var bandageButton: UIButton!
-    @IBOutlet weak var magicButton: UIButton!
-    @IBOutlet weak var inventoryButton: UIButton!
+    @IBOutlet weak var weaponButton: RPGButton!
+    @IBOutlet weak var guardButton: RPGButton!
+    @IBOutlet weak var bandageButton: RPGButton!
+    @IBOutlet weak var magicButton: RPGButton!
+    @IBOutlet weak var inventoryButton: RPGButton!
 
     @IBOutlet weak var enemyImageView: UIImageView!
     @IBOutlet weak var enemyHealthBar: UIView!
@@ -30,22 +30,22 @@ class BattleViewController: UIViewController {
     
     // MARK: - Actions
     
-    @IBAction func buttonTouchDown(_ sender: UIButton) {
-        buttonPress(button: sender)
+    @IBAction func buttonTouchDown(_ sender: RPGButton) {
+        sender.touchDown()
         if sender.restorationIdentifier == "guard" {
             print("guard")
         }
     }
 
-    @IBAction func buttonTouchUpInside(_ sender: UIButton) {
-        buttonUp(button: sender)
+    @IBAction func buttonTouchUpInside(_ sender: RPGButton) {
+        sender.touchUp()
         if sender.restorationIdentifier == "weapon" {
             self.attack()
         }
     }
 
-    @IBAction func buttonTouchUp(_ sender: UIButton) {
-        buttonUp(button: sender)
+    @IBAction func buttonTouchUp(_ sender: RPGButton) {
+        sender.touchUp()
     }
     
     // MARK: - View Setup
@@ -53,7 +53,7 @@ class BattleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-                self.enemyImageView.image = self.enemy.appearance
+        self.enemyImageView.image = self.enemy.appearance
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,11 +62,10 @@ class BattleViewController: UIViewController {
     }
 
     override func viewDidLayoutSubviews() {
-        setupButton(button: self.weaponButton)
-        setupButton(button: self.bandageButton)
-        setupButton(button: self.guardButton)
-        setupButton(button: self.magicButton)
-        setupButton(button: self.inventoryButton)
+        let buttons: [RPGButton] = [self.weaponButton, self.bandageButton, self.guardButton, self.magicButton, self.inventoryButton]
+        for button in buttons {
+            button.setup()
+        }
 
         enemyHealthBarInterior.frame = CGRect(x: 0, y: 0, width: enemyHealthBar.frame.width, height: enemyHealthBar.frame.height)
         enemyHealthBarInterior.layer.cornerRadius = enemyHealthBarInterior.frame.height / 2
@@ -75,54 +74,6 @@ class BattleViewController: UIViewController {
         playerHealthBarInterior.frame = CGRect(x: 0, y: 0, width: playerHealthBar.frame.width, height: playerHealthBar.frame.height)
         playerHealthBarInterior.layer.cornerRadius = enemyHealthBarInterior.frame.height / 2
         playerHealthBarInterior.clipsToBounds = true
-    }
-    
-    // MARK: - Button Appearance
-    
-    func setupButton(button: UIButton) {
-        button.backgroundColor = UIColor.white
-        button.layer.cornerRadius = button.frame.width / 2
-        button.clipsToBounds = true
-        button.layer.shadowPath = UIBezierPath(
-            roundedRect: button.bounds,
-            cornerRadius: button.layer.cornerRadius).cgPath
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOffset = CGSize(width: 3, height: 3)
-        button.layer.shadowRadius = 5
-        button.layer.shadowOpacity = 0.15
-        button.layer.masksToBounds = false
-        
-        let edgeInset = button.frame.width * 0.2
-        
-        button.imageEdgeInsets = UIEdgeInsets(top: edgeInset, left: edgeInset, bottom: edgeInset, right: edgeInset)
-    }
-    
-    func buttonPress(button: UIButton) {
-        UIView.animate(withDuration: 0.1, animations: {
-            button.transform = CGAffineTransform(translationX: 1, y: 2)
-        })
-
-        let offsetAnimation = CABasicAnimation(keyPath: "shadowOffset")
-        offsetAnimation.fromValue = button.layer.shadowOffset
-        offsetAnimation.toValue = CGSize(width: 1, height: 1)
-        offsetAnimation.duration = 0.1
-
-        button.layer.add(offsetAnimation, forKey: offsetAnimation.keyPath)
-        button.layer.shadowOffset = CGSize(width: 1, height: 1)
-    }
-    
-    func buttonUp(button: UIButton) {
-        UIView.animate(withDuration: 0.1, animations: {
-            button.transform = CGAffineTransform(translationX: -1, y: -2)
-        })
-        
-        let offsetAnimation = CABasicAnimation(keyPath: "shadowOffset")
-        offsetAnimation.fromValue = button.layer.shadowOffset
-        offsetAnimation.toValue = CGSize(width: 3, height: 3)
-        offsetAnimation.duration = 0.1
-
-        button.layer.add(offsetAnimation, forKey: offsetAnimation.keyPath)
-        button.layer.shadowOffset = CGSize(width: 3, height: 3)
     }
     
     // MARK: - Enemy Behavior

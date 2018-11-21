@@ -14,7 +14,6 @@ class PlaceViewController: UIViewController {
     @IBOutlet weak var enemyCollectionView: UICollectionView!
     
     var enemies: [Enemy] = []
-    
     var place: Place = Place()
 
     override func viewDidLoad() {
@@ -30,9 +29,6 @@ class PlaceViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        for enemy in enemies {
-            print(enemy.alive)
-        }
         enemyCollectionView.reloadData()
     }
     
@@ -51,7 +47,7 @@ class PlaceViewController: UIViewController {
 
 extension PlaceViewController: EnemyCollectionViewCellDelegate {
     
-    func buttonPressed(cell: EnemyCollectionViewCell) {
+    func enemyButtonPressed(cell: EnemyCollectionViewCell) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let battleView = storyBoard.instantiateViewController(withIdentifier: "battleView") as! BattleViewController
         battleView.enemy = cell.enemy
