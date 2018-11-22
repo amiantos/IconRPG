@@ -16,11 +16,11 @@ class Place {
     var intelligence = 10
     var dexterity = 10
     var appearance: UIImage
-    
+
     init() {
         // Add enemies to place
         let random = Int.random(in: 1 ... 3)
-        for _ in 1 ... 3 {
+        for _ in 1 ... random {
             enemies.append(Enemy())
         }
         // Determine appearance

@@ -12,26 +12,25 @@ class PlaceViewController: UIViewController {
 
     @IBOutlet weak var placeImageView: UIImageView!
     @IBOutlet weak var enemyCollectionView: UICollectionView!
-    
+
     var enemies: [Enemy] = []
     var place: Place = Place()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.placeImageView.image = place.appearance
         self.enemies = place.enemies
-        
+
         enemyCollectionView.delegate = self
         enemyCollectionView.dataSource = self
 
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         enemyCollectionView.reloadData()
     }
-    
 
     /*
     // MARK: - Navigation
@@ -46,42 +45,49 @@ class PlaceViewController: UIViewController {
 }
 
 extension PlaceViewController: EnemyCollectionViewCellDelegate {
-    
+
     func enemyButtonPressed(cell: EnemyCollectionViewCell) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let battleView = storyBoard.instantiateViewController(withIdentifier: "battleView") as! BattleViewController
-        battleView.enemy = cell.enemy
-        self.present(battleView, animated: true, completion: nil)
-        
+        if let battleView = storyBoard.instantiateViewController(
+                withIdentifier: "battleView") as? BattleViewController {
+            battleView.enemy = cell.enemy
+            self.present(battleView, animated: true, completion: nil)
+        }
     }
-    
 }
 
-extension PlaceViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension PlaceViewController: UICollectionViewDataSource,
+                               UICollectionViewDelegate,
+                               UICollectionViewDelegateFlowLayout {
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.restorationIdentifier == "enemyCells" {
             return enemies.count
         }
         return 0
     }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView.restorationIdentifier == "enemyCells" {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "enemyButton", for: indexPath) as! EnemyCollectionViewCell
-            cell.delegate = self
-            cell.enemy = enemies[indexPath.row]
-            cell.updateLifeStatus()
-            return cell
+            if let cell = collectionView.dequeueReusableCell(
+                    withReuseIdentifier: "enemyButton", for: indexPath) as? EnemyCollectionViewCell {
+                cell.delegate = self
+                cell.enemy = enemies[indexPath.row]
+                cell.updateLifeStatus()
+                return cell
+            }
         }
         return UICollectionViewCell()
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView.restorationIdentifier == "enemyCells" {
             let width = (collectionView.frame.width / 3)
             let height = collectionView.frame.height
@@ -90,14 +96,17 @@ extension PlaceViewController: UICollectionViewDataSource, UICollectionViewDeleg
         }
         return CGSize(width: 1, height: 1 )
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
         if collectionView.restorationIdentifier == "enemyCells" {
             let width = (collectionView.frame.width / 3)
             let height = collectionView.frame.height
             let cellWidth: CGFloat = height < width ? height : width
             let numberOfCells: CGFloat = CGFloat(collectionView.numberOfItems(inSection: 0))
-            let edgeInsets = ((collectionView.frame.size.width - (numberOfCells * cellWidth)) / (numberOfCells == 2 ? 2 : numberOfCells + 1))
+            let edgeInsets = ((collectionView.frame.size.width - (numberOfCells * cellWidth))
+                / (numberOfCells == 2 ? 2 : numberOfCells + 1))
             return UIEdgeInsets(top: 0, left: edgeInsets, bottom: 0, right: edgeInsets)
         }
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)

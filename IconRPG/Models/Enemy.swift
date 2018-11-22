@@ -17,7 +17,7 @@ class Enemy {
     var dexterity = 10
     var appearance: UIImage
     var alive: Bool = true
-    
+
     init() {
         // Determine enemy appearance
         let images = ["enemy_furry_demon", "enemy_ghost", "enemy_demon"]
