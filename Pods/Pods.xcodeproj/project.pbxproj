@@ -6,54 +6,93 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		13563357CE0FA9911591F8BEDBF11284 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E65E5A3C4D4FC19DABCA907D5AF99EA0 /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		29162210C66CC6B2F859E6A6D3B82642 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		54FEFD115E3CD788C135F24302688B7F /* Pods-IconRPG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E130881662D1E5B9348B82E0AA9B69BF /* Pods-IconRPG-dummy.m */; };
-		F594F60EBF6D5D770351EDF976C047B4 /* Pods-IconRPG-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 318B780D578828062D3D08D995492C18 /* Pods-IconRPG-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		038CD3437F312AA7DA656C2406E6AFB9 /* Pods-IconRPG-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3FE4429BCB2FACA248D9F2989A173E /* Pods-IconRPG-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CB38A235AE7F4AC159398279AC719B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		8DF740BC4F57B5A8FDEA4DE83737422B /* Pods-IconRPG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 451C62E7874E9117BB4F4CBE6869250A /* Pods-IconRPG-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		16A4F202DDA2C88482A4A12156A7C81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13563357CE0FA9911591F8BEDBF11284;
+			remoteInfo = SwiftLint;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		1D28ED4172B95A93570C97FA83BF58C4 /* Pods-IconRPG-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconRPG-acknowledgements.plist"; sourceTree = "<group>"; };
-		318B780D578828062D3D08D995492C18 /* Pods-IconRPG-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IconRPG-umbrella.h"; sourceTree = "<group>"; };
-		36784825165FDB4F8E46A883CCCE4DEE /* Pods-IconRPG.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IconRPG.modulemap"; sourceTree = "<group>"; };
-		36857E880E080532D49A78E37B19554E /* Pods-IconRPG-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IconRPG-resources.sh"; sourceTree = "<group>"; };
 		374FAB5E4BA6381E606A648862D08F8C /* Pods_IconRPG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IconRPG.framework; path = "Pods-IconRPG.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		544B83B36A713EE940D010D6EB44E806 /* Pods-IconRPG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconRPG.release.xcconfig"; sourceTree = "<group>"; };
-		6543BBC23118D3CC39780EBFE5750FEA /* Pods-IconRPG-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IconRPG-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6DBCD192600A5623829C73F74BD39695 /* Pods-IconRPG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconRPG.debug.xcconfig"; sourceTree = "<group>"; };
+		3A5F84C2F05E8FF3052C595ECEE56034 /* Pods-IconRPG-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconRPG-acknowledgements.plist"; sourceTree = "<group>"; };
+		451C62E7874E9117BB4F4CBE6869250A /* Pods-IconRPG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IconRPG-dummy.m"; sourceTree = "<group>"; };
+		474F2918826F0246F1C4AB1A1B89D4D7 /* Pods-IconRPG.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IconRPG.modulemap"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8A3FE4429BCB2FACA248D9F2989A173E /* Pods-IconRPG-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IconRPG-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E12F147B8F279232C58D47D32396CCA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6C9BBFBF3F41C9BA65C917A5E0135E6 /* Pods-IconRPG-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IconRPG-frameworks.sh"; sourceTree = "<group>"; };
-		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E130881662D1E5B9348B82E0AA9B69BF /* Pods-IconRPG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IconRPG-dummy.m"; sourceTree = "<group>"; };
+		98214F220CC1CC81592570A1B1A4DB1B /* Pods-IconRPG-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconRPG-Info.plist"; sourceTree = "<group>"; };
+		9975C2544A786BA836E51A9C399AF12D /* Pods-IconRPG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconRPG.release.xcconfig"; sourceTree = "<group>"; };
+		E051927E9A0E02DDB945A71F7FBC6909 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
+		EC51A9A98C285B72B3EEB028CBA66785 /* Pods-IconRPG-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IconRPG-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FBBF8E2DF921B01B8BA0EC765663A218 /* Pods-IconRPG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconRPG.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1EE8C1C22BE60E33193C91F50B6248DA /* Frameworks */ = {
+		C5B13BFC242643E01CCB3DFD3DD58138 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29162210C66CC6B2F859E6A6D3B82642 /* Foundation.framework in Frameworks */,
+				7CB38A235AE7F4AC159398279AC719B0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+		028144E0579A2389F6D122FCAB5F7816 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+				0ED587AA2331BF39E26F486487B4147B /* Support Files */,
 			);
-			name = iOS;
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		5F27198A4549346EC33F84D60B4943A0 /* Targets Support Files */ = {
+		0ED587AA2331BF39E26F486487B4147B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D7B2979EFD5046B07D468F553E3BA73F /* Pods-IconRPG */,
+				E051927E9A0E02DDB945A71F7FBC6909 /* SwiftLint.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		47D85641FEFA0B79269A8A46AD32F906 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A4B5612FC2357F632D7A7BC9A3826A5 /* Pods-IconRPG */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -61,8 +100,9 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9EC5AE59D5794DA0579E467CDC0204CC /* Pods */,
 				802408FB46370F5A4D0BC69AC07CEAEC /* Products */,
-				5F27198A4549346EC33F84D60B4943A0 /* Targets Support Files */,
+				47D85641FEFA0B79269A8A46AD32F906 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,58 +114,65 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		8A4B5612FC2357F632D7A7BC9A3826A5 /* Pods-IconRPG */ = {
 			isa = PBXGroup;
 			children = (
-				44D5347904CF754D6785B84253F2574A /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D7B2979EFD5046B07D468F553E3BA73F /* Pods-IconRPG */ = {
-			isa = PBXGroup;
-			children = (
-				9E12F147B8F279232C58D47D32396CCA /* Info.plist */,
-				36784825165FDB4F8E46A883CCCE4DEE /* Pods-IconRPG.modulemap */,
-				6543BBC23118D3CC39780EBFE5750FEA /* Pods-IconRPG-acknowledgements.markdown */,
-				1D28ED4172B95A93570C97FA83BF58C4 /* Pods-IconRPG-acknowledgements.plist */,
-				E130881662D1E5B9348B82E0AA9B69BF /* Pods-IconRPG-dummy.m */,
-				A6C9BBFBF3F41C9BA65C917A5E0135E6 /* Pods-IconRPG-frameworks.sh */,
-				36857E880E080532D49A78E37B19554E /* Pods-IconRPG-resources.sh */,
-				318B780D578828062D3D08D995492C18 /* Pods-IconRPG-umbrella.h */,
-				6DBCD192600A5623829C73F74BD39695 /* Pods-IconRPG.debug.xcconfig */,
-				544B83B36A713EE940D010D6EB44E806 /* Pods-IconRPG.release.xcconfig */,
+				474F2918826F0246F1C4AB1A1B89D4D7 /* Pods-IconRPG.modulemap */,
+				EC51A9A98C285B72B3EEB028CBA66785 /* Pods-IconRPG-acknowledgements.markdown */,
+				3A5F84C2F05E8FF3052C595ECEE56034 /* Pods-IconRPG-acknowledgements.plist */,
+				451C62E7874E9117BB4F4CBE6869250A /* Pods-IconRPG-dummy.m */,
+				98214F220CC1CC81592570A1B1A4DB1B /* Pods-IconRPG-Info.plist */,
+				8A3FE4429BCB2FACA248D9F2989A173E /* Pods-IconRPG-umbrella.h */,
+				FBBF8E2DF921B01B8BA0EC765663A218 /* Pods-IconRPG.debug.xcconfig */,
+				9975C2544A786BA836E51A9C399AF12D /* Pods-IconRPG.release.xcconfig */,
 			);
 			name = "Pods-IconRPG";
 			path = "Target Support Files/Pods-IconRPG";
 			sourceTree = "<group>";
 		};
+		9EC5AE59D5794DA0579E467CDC0204CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				028144E0579A2389F6D122FCAB5F7816 /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AA5AD9A91DFCE1025B91E96136FB2FE6 /* Headers */ = {
+		9FD49E4F0FAC09DA0B06934FCC489DEE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F594F60EBF6D5D770351EDF976C047B4 /* Pods-IconRPG-umbrella.h in Headers */,
+				038CD3437F312AA7DA656C2406E6AFB9 /* Pods-IconRPG-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4EBD42AAEC35542403561CBC9936574F /* Pods-IconRPG */ = {
+		0B9656C212F808FDDBE79124E9E4DBCD /* Pods-IconRPG */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BCE7A0EB7AFDFC212B3563A3AFDC0BE /* Build configuration list for PBXNativeTarget "Pods-IconRPG" */;
+			buildConfigurationList = 279A6B8DD86C76271087573E09E4F5E4 /* Build configuration list for PBXNativeTarget "Pods-IconRPG" */;
 			buildPhases = (
-				AA5AD9A91DFCE1025B91E96136FB2FE6 /* Headers */,
-				E30D39F90B5CFEEA02C14148983E85D9 /* Sources */,
-				1EE8C1C22BE60E33193C91F50B6248DA /* Frameworks */,
-				20D3D2AA8EBF96CD06DC00AEB5479E60 /* Resources */,
+				9FD49E4F0FAC09DA0B06934FCC489DEE /* Headers */,
+				1C4B532A63DC3E42C52D82CDFADC4676 /* Sources */,
+				C5B13BFC242643E01CCB3DFD3DD58138 /* Frameworks */,
+				881A2A6B9DB651854558E6A9F73B503A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				43A995FEDF47FA10C9F1808F071F87FA /* PBXTargetDependency */,
 			);
 			name = "Pods-IconRPG";
 			productName = "Pods-IconRPG";
@@ -153,13 +200,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EBD42AAEC35542403561CBC9936574F /* Pods-IconRPG */,
+				0B9656C212F808FDDBE79124E9E4DBCD /* Pods-IconRPG */,
+				13563357CE0FA9911591F8BEDBF11284 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		20D3D2AA8EBF96CD06DC00AEB5479E60 /* Resources */ = {
+		881A2A6B9DB651854558E6A9F73B503A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -169,123 +217,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E30D39F90B5CFEEA02C14148983E85D9 /* Sources */ = {
+		1C4B532A63DC3E42C52D82CDFADC4676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54FEFD115E3CD788C135F24302688B7F /* Pods-IconRPG-dummy.m in Sources */,
+				8DF740BC4F57B5A8FDEA4DE83737422B /* Pods-IconRPG-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		43A995FEDF47FA10C9F1808F071F87FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 13563357CE0FA9911591F8BEDBF11284 /* SwiftLint */;
+			targetProxy = 16A4F202DDA2C88482A4A12156A7C81C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		1C85B625ECAB46343598E0000B4E3686 /* Release */ = {
+		1F207BEB3EA2A9E968387251B6D2DD86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 544B83B36A713EE940D010D6EB44E806 /* Pods-IconRPG.release.xcconfig */;
+			baseConfigurationReference = E051927E9A0E02DDB945A71F7FBC6909 /* SwiftLint.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IconRPG/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IconRPG/Pods-IconRPG.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		8DFC9796FA9E6BCF680E1E0B1780DD0D /* Release */ = {
+		30651D4534116791B924FAAAA80A5CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		BBD7B95F719C3B6D4BFCD0D00EBBC268 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DBCD192600A5623829C73F74BD39695 /* Pods-IconRPG.debug.xcconfig */;
+			baseConfigurationReference = FBBF8E2DF921B01B8BA0EC765663A218 /* Pods-IconRPG.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -296,7 +271,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IconRPG/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-IconRPG/Pods-IconRPG-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,7 +294,24 @@
 			};
 			name = Debug;
 		};
-		E19471FE7E209D0818DAFB22D649A6E9 /* Debug */ = {
+		6C1FE194DE1D6444375080D6C187FEEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E051927E9A0E02DDB945A71F7FBC6909 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -379,29 +371,135 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
+		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F38CCF8CBBDF167D0DAEE36BE18760FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9975C2544A786BA836E51A9C399AF12D /* Pods-IconRPG.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IconRPG/Pods-IconRPG-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IconRPG/Pods-IconRPG.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		279A6B8DD86C76271087573E09E4F5E4 /* Build configuration list for PBXNativeTarget "Pods-IconRPG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E19471FE7E209D0818DAFB22D649A6E9 /* Debug */,
-				8DFC9796FA9E6BCF680E1E0B1780DD0D /* Release */,
+				30651D4534116791B924FAAAA80A5CCA /* Debug */,
+				F38CCF8CBBDF167D0DAEE36BE18760FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BCE7A0EB7AFDFC212B3563A3AFDC0BE /* Build configuration list for PBXNativeTarget "Pods-IconRPG" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBD7B95F719C3B6D4BFCD0D00EBBC268 /* Debug */,
-				1C85B625ECAB46343598E0000B4E3686 /* Release */,
+				8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */,
+				B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E65E5A3C4D4FC19DABCA907D5AF99EA0 /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1FE194DE1D6444375080D6C187FEEA /* Debug */,
+				1F207BEB3EA2A9E968387251B6D2DD86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
